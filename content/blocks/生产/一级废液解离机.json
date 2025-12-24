@@ -1,0 +1,55 @@
+{
+    "type": "Separator",
+    "name": "一级废液解离机",
+    "description": "直接不稳定低效地提取一级精炼废液中的可用物质，多余材料会被焚毁。\n可以获取钍。",
+    "size": 3,
+    "health": 480,
+    "hasPower": true,
+	"hasLiquids": true,
+    "itemCapacity": 20,
+	"liquidCapacity": 10,
+    "category": "crafting",
+	"research": "废液离心机",
+    "craftTime": 12,
+    "consumes": {
+		"power": 3,
+		"liquid": {
+			"liquid": "一级精炼废液",
+			"amount": 0.16
+		}
+	},
+    "requirements": [
+        "titanium/125",
+        "metaglass/30",
+        "silicon/25",
+        "plastanium/15"
+    ],
+    "results": [
+        {"item": "copper","amount": 6},
+        {"item": "lead","amount": 6},
+        {"item": "titanium","amount": 4},
+        {"item": "graphite","amount": 2},
+        {"item": "thorium","amount": 1}
+        
+    ],
+
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "一级精炼废液"
+            },
+            {
+                "type": "DrawBlurSpin",
+                "suffix": "-suffix",
+                "rotateSpeed": 5
+            },
+            "DrawDefault"
+        ]
+    }
+}

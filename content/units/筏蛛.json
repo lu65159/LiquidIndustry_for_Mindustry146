@@ -1,0 +1,60 @@
+{
+    "type": "tank",
+    "name": "筏蛛",
+    "description": "水陆两用坦克2型，向附近的敌人发射强力能量束。",
+    "hovering": true,
+    "hoverable": true,
+    "research": "水黾",
+    "squareShape": true,
+	"omniMovement": true,
+	"rotateMoveFirst": true,
+    "rotateSpeed": 8,
+	"speed": 2,
+    "hitSize": 15,
+    "ammoCapacity": 30,
+	"health": 640,
+	"armor": 10,
+	"drag": 0.06,
+	"accel": 0.1,
+    "itemCapacity": 10,
+	"faceTarget": false,
+    "targetAir": true,
+    "targetGround": true,
+    "targetFlags": [
+		"core",
+		"turret"
+	],
+    "immunities": [
+        "freezing"
+    ],
+    "requirements": {
+		"block": "additive-reconstructor", 
+		"previous": "水黾"
+	},
+    "weapons": [
+		{
+            "name": "筏蛛1",
+            "reload": 150,
+            "recoil": 1,
+            "x": 0,
+            "y": 0,
+            "rotate": true,
+            "rotateSpeed": 1.5,
+            "mirror": false,
+            "inaccuracy": 0,
+            "ejectEffect": "lancerLaserShoot",
+            "shootSound": "laser",
+            "alternate": false,
+            "bullet": {
+                "type": "LaserBulletType",
+                "damage": 160,
+                "length": 220,
+                "width": 16,
+                "pierceCap": 4,
+                "hitSize": 4,
+                "collidesAir": true,
+                "hitEffect": "hitLaser"
+            }
+        }
+    ]
+}

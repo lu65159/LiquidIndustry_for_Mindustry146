@@ -1,0 +1,11 @@
+{
+	"requirements": [
+		"metaglass/1",
+		"thorium/2",
+        "plastanium/1"
+	],
+	"speed": 0.3,
+	"displayedSpeed": 30,
+	"displayFlow":true,
+	"research":"钍传送带"
+}

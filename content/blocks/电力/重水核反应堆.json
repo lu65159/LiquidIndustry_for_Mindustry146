@@ -1,0 +1,101 @@
+{
+    "type": "NuclearReactor",
+    "name": "重水核反应堆",
+    "description": "使用重水作为慢化剂，以极大地提高发电效率，依然需要冷却液来持续冷却。\n如果冷却液供应不足，会剧烈爆炸。\n[red]慢化剂供应不足也有爆炸可能。",
+    "size": 4,
+    "health": 1000,
+    "liquidCapacity": 40,
+	"itemCapacity": 40,
+	"hasItems": true,
+	"hasLiquids": true,
+	"outputsPower": true,
+    "powerProduction": 52.5,
+	"itemDuration": 480,
+    "lightColor": "FFFFFF",
+	"explosionShake": 9,
+	"explosionShakeDuration": 120,
+	"explosionRadius": 30,
+	"explosionDamage": 10000,
+    "explodeSound": "explosionbig",
+    "explodeEffect": {
+		"type": "MultiEffect",
+		"effects": [
+			{
+				"type": "WaveEffect",
+				"lifetime": 20,
+				"sizeFrom": 0,
+				"sizeTo": 300,
+				"strokeFrom": 16,
+				"strokeTo": 0,
+				"colorFrom": "A97BFF",
+				"colorTo": "FFFFFF"
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 30,
+				"interp": "pow5Out",
+				"sizeInterp": "pow3In",
+				"sizeFrom": 40,
+				"sizeTo": 0,
+				"length": 250,
+				"baseLength": 0,
+				"lifetime": 480,
+				"colorFrom": "A97BFF80",
+				"colorTo": "A97BFF00"
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 20,
+				"line": true,
+				"interp": "pow3Out",
+				"sizeInterp": "pow2In",
+				"strokeFrom": 2,
+				"strokeTo": 0,
+				"lenFrom": 120,
+				"lenTo": 0,
+				"length": 180,
+				"baseLength": 40,
+				"lifetime": 50,
+				"colorFrom": "C9A0FF",
+				"colorTo": "C9A0FF"
+			}
+		]
+	},
+    "fuelItem": "thorium",
+	"heating": 0.08,
+    "coolantPower": 4,
+	"consumes": {
+		"items": ["thorium/1"],
+        "liquids": [
+			"cryofluid/0.1",
+            "重水/0.03"
+		]		
+	},
+    "requirements": [
+		"lead/400",
+        "metaglass/80",
+		"graphite/200",	
+		"thorium/150",
+		"silicon/300",
+        "固态重水/1"
+	],
+	"category": "power",
+	"research": "thorium-reactor",
+
+	"drawer":{
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawLiquidTile",
+                "drawLiquid": "重水"
+			},
+			{
+				"type": "DrawLiquidTile",
+                "drawLiquid": "cryofluid"
+			},
+			{
+				"type": "DrawDefault"
+			}
+		]
+	}
+}

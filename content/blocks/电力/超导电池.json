@@ -1,0 +1,37 @@
+{
+    "type": "Battery",
+    "name": "超导电池",
+    "description": "储存电网多余电力，并在电网供电不足时放电。\n电力容量更高。",
+    "health": 120,
+    "size": 1,
+    "consumes": {
+		"powerBuffered": 20000
+	},
+    "requirements": [
+        "titanium/5",
+        "lead/5",
+        "超导质/1"
+    ],
+    "baseExplosiveness": 3,
+    "category": "power",
+    "research": "battery-large",
+
+    "drawer": {
+        "type": "DrawMulti",
+		"drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "DrawPower",
+                "emptyLightColor": "00A9A9FF",
+                "fullLightColor": "00FFFFFF"
+            },
+            {
+                "type": "DrawRegion",
+                "suffix": "-top"
+            }
+		]
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "type": "LightBlock",
+    "name": "大型照明器",
+    "description": "作为光源，更大更亮。",
+    "size": 3,
+    "health": 400,
+    "brightness": 0.83,
+    "radius": 560,
+    "consumes": {
+        "power": 0.6
+    },
+    "requirements": [
+        "graphite/24",
+        "silicon/15",
+        "titanium/6"
+    ],
+    "category": "effect",
+    "research": "中型照明器"
+}

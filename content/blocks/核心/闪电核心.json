@@ -1,0 +1,28 @@
+{
+    //"type": "CoreBlock",
+    //"PowerProduction": 3.33333, //200电力
+    "name":"闪电核心",
+	"description": "改装的终代核心, 自带小型电击能量场以及一定的电力输出。\n核心单位免疫寒冷天气的负面效果。",
+    "size": 5,
+    "health": 8000,
+    "armor":10,
+    "hasPower": true,
+    "consumesPower": false,
+    "outputsPower": true,
+    "rebuildable": false,
+    "replaceable": true,
+    "itemCapacity": 18000,	
+	"requirements": [
+        "copper/12000",
+        "lead/12000",
+        "titanium/8000",
+        "thorium/4000",
+        "silicon/7000",
+        "plastanium/500",
+        "surge-alloy/1500"
+	],
+	"unitType": "伽马-S",
+	"unitCapModifier": 36,
+	"category": "effect",
+    "research": "微型核心基座"
+}

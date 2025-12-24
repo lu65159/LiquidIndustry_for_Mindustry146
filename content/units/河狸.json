@@ -1,0 +1,91 @@
+{
+    "type": "tank",
+    "name": "河狸",
+    "description": "水陆两用坦克3型，向附近的敌人发射高能带电激光。\n内部搭载一台微型水黾。",
+    "hovering": true,
+    "hoverable": true,
+    "research": {
+        "parent": "筏蛛",
+        "objectives": [
+            {
+                "type": "SectorComplete",
+                "preset": "coastline"
+            }
+        ]
+    },
+    "squareShape": true,
+	"omniMovement": true,
+	"rotateMoveFirst": true,
+    "rotateSpeed": 2.5,
+	"speed": 1,
+    "hitSize": 20,
+    "ammoCapacity": 40,
+	"health": 2300,
+	"armor": 16,
+	"drag": 0.05,
+	"accel": 0.08,
+    "itemCapacity": 30,
+	"faceTarget": false,
+    "targetFlags": [
+		"core",
+		"turret"
+	],
+    "immunities": [
+        "freezing"
+    ],
+    "requirements": {
+		"block": "multiplicative-reconstructor",
+		"previous": "筏蛛"
+	},
+    "abilities": [
+        {
+            "type": "SpawnDeathAbility",
+            "faceOutwards": true,
+            "amount": 1,
+            "spread": 1,
+            "unit": "水黾"
+        }
+	],
+    "weapons": [
+        {
+            "name": "河狸1",
+            "reload": 360,
+            "recoil": 3,
+            "x": 0,
+            "y": 0,
+            "shootY": 15,
+            "rotate": true,
+            "rotateSpeed": 1,
+            "mirror": false,
+            "inaccuracy": 0,
+            "shootSound": "laserblast",
+            "chargeSound": "lasercharge",
+            "shake": 6,
+            "alternate": false,
+            "targetAir": true,
+            "bullet": {
+                "type": "LaserBulletType",
+
+                "lightningSpacing": 20,
+                "lightningLength": 3,
+                "lightningDelay": 0.1,
+                "lightningLengthRand": 12,
+                "lightningDamage": 15,
+                "lightningAngleRand": 45,
+                "lightningColor": "FFFFFFA0",
+
+                "damage": 505,
+                "length": 300,
+                "width": 40,
+                "sideAngle": 30,
+                "pierceCap": -1,
+                "collidesAir": true,
+                "color": "FFFFFF",
+                "hitEffect": "hitLaser",
+                "hitSound": "plasmaboom",
+
+                "chargeEffect": "lancerLaserCharge"
+            }
+        }
+    ]
+}

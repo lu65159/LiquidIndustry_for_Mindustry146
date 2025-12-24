@@ -1,0 +1,17 @@
+{
+	"name": "液体质驱",
+	"description": "跨越任何地形直接传送液体！只能连接一个目标。\n[red]目前尚未完善，多人模式下仅房主可调整配置。",
+	"health": 680,
+    "size": 4,
+	"consumes": {
+		"power": 5
+	},
+	"requirements": [
+		"metaglass/200",
+		"titanium/180",
+        "thorium/100",
+        "silicon/150",
+        "亲水质/20"
+    ],
+	"research": "phase-conduit"
+}

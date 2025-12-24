@@ -1,0 +1,50 @@
+{
+	"type": "GenericCrafter",
+	"description": "在加入钍的情况下电解水以生产重水。",
+	"name": "重水生产器",
+	"health": 400,
+	"size": 2,
+	"hasPower": true,
+	"hasItems": true,
+	"hasLiquids": true,
+	"liquidCapacity": 60,
+	
+	"consumes": {
+		"power": 5,
+		"items": [
+            "thorium/2"
+		],
+		"liquids": [
+			"water/0.5"
+		]
+	},
+
+	"outputLiquids": [
+     {
+        "liquid": "重水", 
+        "amount": 0.5 
+     }
+    ],
+	"craftTime": 60,
+	"requirements": [
+		"copper/100",
+		"titanium/125",
+		"thorium/50",
+		"silicon/60"
+	],
+	"category": "crafting",
+	"research": "plastanium-compressor",
+
+
+	"updateEffect": "steam",
+	"craftEffect": "bubble",
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawDefault"
+			},
+			"DrawFlame"
+		]
+	}
+}

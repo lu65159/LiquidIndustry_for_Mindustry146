@@ -1,0 +1,9 @@
+require("planets/Nepture");
+require("newitems");
+require("newliquids");
+require("base/stats");
+require("blocks/固液转化器");
+require("blocks/液体质驱");
+require("blocks/液体卸载器");
+require("blocks/闪电核心");
+require("blocks/雷霆核心");

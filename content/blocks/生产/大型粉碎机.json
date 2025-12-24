@@ -1,0 +1,47 @@
+{
+	"type": "GenericCrafter",
+	"health": 160,
+	"name": "大型粉碎机",
+    "description": "将废料粉碎成细沙，效率极高。",
+	"size": 2,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 30,
+	"itemCapacity": 40,
+	"consumes": {
+		"power": 1.75,
+		"items": [
+			"scrap/4"
+		]
+	},
+    "outputItem": {
+		"item": "sand",
+		"amount": 5
+	},
+	"requirements": [
+        "copper/90",
+		"lead/75",
+		"silicon/20"
+	],
+    "updateEffect": "pulverizeSmall",
+	"ambientSound": "grinding",
+	"category": "crafting",
+	"research": "pulverizer",
+
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "DrawBlurSpin",
+                "suffix": "-suffix",
+                "rotateSpeed": 15
+            },
+			"DrawDefault"
+		]
+	}
+}

@@ -1,0 +1,10 @@
+{
+    "range": 24,
+    "requirements": [
+        "metaglass/24",
+        "titanium/12",
+        "silicon/5",
+        "phase-fabric/5",
+        "亲水质/1"
+	]
+}

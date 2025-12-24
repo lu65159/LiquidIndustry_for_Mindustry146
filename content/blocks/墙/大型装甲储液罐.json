@@ -1,0 +1,16 @@
+{
+	"name": "大型装甲储液罐",
+	"type": "LiquidRouter",
+	"description": "保护己方建筑，挡下敌方炮弹。能够作为储液罐使用。",
+	"health": 2080,
+	"size": 2,
+    "hasLiquids": true,
+    "liquidCapacity": 1600,
+	"requirements": [
+        "metaglass/32",
+		"titanium/24",
+		"亲水质/4"         
+	],
+	"category": "defense",
+	"research": "装甲储液罐"
+}

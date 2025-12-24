@@ -1,0 +1,17 @@
+{
+    "type":"Unloader",
+	"name":"相织布卸载器",
+    "description": "从周围的建筑卸载指定物品，速度更快。",
+	"health": 100,
+	"size":1,
+	"speed": 1.5,
+	"update": "true",
+	"hasItems": "true",
+	"requirements": [
+		"titanium/30",
+		"silicon/40",
+		"phase-fabric/10"
+	],
+	"category": "effect",
+	"research":"unloader"
+	}

@@ -1,0 +1,31 @@
+{
+    "name": "固液转化器",
+    "description": "使用少量亲水质压缩大量液体，形成便于跨区块运输的固态形态的液体。\n（配方的特殊性使固态液体可以通过其传输）",
+    "size": 3,
+    "health": 300,
+    "hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+    "itemCapacity": 6,
+	"liquidCapacity": 1800,
+    "requirements": [
+		"metaglass/300",
+        "titanium/240",
+        "silicon/300",
+        "亲水质/50"
+	],
+    "category": "crafting",
+    "research": {
+        "parent": "亲水质合成器",
+        "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "extractionOutpost"
+			}
+		]
+    }
+}
+
+
+	
+

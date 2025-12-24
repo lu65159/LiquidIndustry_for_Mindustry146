@@ -1,0 +1,9 @@
+{
+    "itemCapacity": 20,
+	"displayFlow":true,
+	"requirements":[
+		"亲水质/1",
+		"silicon/1",
+		"plastanium/1"
+	]
+}

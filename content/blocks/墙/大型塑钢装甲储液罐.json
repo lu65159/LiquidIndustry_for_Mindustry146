@@ -1,0 +1,19 @@
+{
+	"name": "塑钢装甲储液罐",
+	"type": "LiquidRouter",
+	"description": "保护己方建筑，挡下敌方炮弹。能够作为储液罐使用, 兼具塑钢墙的特性。",
+	"health": 2560,
+	"size": 2,
+	"absorbLasers": true,
+	"insulated":true,
+    "hasLiquids": true,
+    "liquidCapacity": 2000,
+	"requirements": [
+        "metaglass/48",
+		"titanium/24",
+		"plastanium/20",
+		"亲水质/4"         
+	],
+	"category": "defense",
+	"research": "塑钢装甲储液罐"
+}

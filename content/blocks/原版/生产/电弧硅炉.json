@@ -1,0 +1,47 @@
+{
+    "type": "GenericCrafter",
+    "name": "电弧硅炉",
+    "description": " 将沙和石墨精炼成硅。（埃里克尔修改版）",
+    "size": 3,
+    "health": 275,
+    "hasPower": true,
+    "hasLiquids": false,
+    "itemCapacity": 30,
+    "craftEffect": "none",
+    "requirements": [
+        "copper/90",
+        "lead/75",
+        "graphite/10",
+        "silicon/5"
+	],
+    "consumes": {
+		"power": 4,
+		"items": [
+            "graphite/1",
+            "sand/4"
+		]
+	},
+    "outputItems": [
+        "silicon/4"
+    ],
+    "craftTime": 50,
+    "category": "crafting",
+	"research": "微型核心基座",
+    
+    "ambientSound": "smelter",
+    "ambientSoundVolume": 0.12,
+
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            "DrawArcSmelt",
+            "DrawDefault"
+        ]
+    },
+    "fogRadius": 3
+        
+}

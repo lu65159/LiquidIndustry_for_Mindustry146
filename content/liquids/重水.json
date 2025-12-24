@@ -1,0 +1,15 @@
+{
+	"name": "重水",
+	"description": "能减小中子速度，控制核裂变过程，但具有腐蚀性和放射性。\n用于核反应的减速剂。",
+	"alwaysUnlocked":false,
+	"effect": "corroded",
+	"lightColor":"3CA37030",
+	"color": "3D6E70FF",
+	"flammability": 0,
+	"temperature": 0.3,
+	"heatCapacity": 0.6,
+	"viscosity": 0.3,
+	"boilPoint": 0.52,
+	"research": "thorium",
+	"coolant": false
+}

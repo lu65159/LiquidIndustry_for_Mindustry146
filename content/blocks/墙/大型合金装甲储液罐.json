@@ -1,0 +1,50 @@
+{
+	"name": "大型合金装甲储液罐",
+	"description": "保护己方建筑，挡下敌方炮弹。能够作为储液罐使用, 被摧毁时释放电能。",
+	"health": 4400,
+	"size": 2,
+	"armor": 10,
+    "hasLiquids": true,
+    "liquidCapacity": 2000,
+	"requirements": [
+        "metaglass/40",
+		"titanium/24",
+		"surge-alloy/24",
+		"亲水质/4"         
+	],
+	"category": "defense",
+	"research": "合金装甲储液罐",
+	
+	"destroyBullet": {
+		"type": "BasicBulletType",
+		"damage": 0,
+		"speed": 0,
+		"lifetime": 1,
+		"frontColor": "00000000",
+		"backColor": "00000000",
+		"fragBullet":{
+				"type": "LightningBulletType",
+				"damage": 2000,
+				"lightning": 4,
+				"lightningLength": 20,
+				"lightningColor": "F3E979",
+				"shootSound": "spark",
+				"collides": false,
+				"absorbable": false,
+				"pierceArmor": true,	
+				"hitEffect": {
+					"type": "WaveEffect",
+					"lifetime": 5,
+					"sizeFrom": 0,
+					"sizeTo": 15,
+					"strokeFrom": 2,
+					"strokeTo": 0,
+					"colorFrom": "F3E979",
+					"colorTo": "F3E979"
+				},
+				"despawnEffect": "none"
+		},
+		"fragBullets": 4
+	},
+	"destroyBulletSameTeam": true
+}
